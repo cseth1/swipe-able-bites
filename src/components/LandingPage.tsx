@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const LandingPage: React.FC = () => {
-  // Array of food emojis for the background
   const foodEmojis = ['🍔', '🍕', '🌮', '🍜', '🍣', '🍱', '🥗', '🥪', '🍝', '🍖', '🍗', '🥩', '🌯', '🥨', '🥐', '🧆'];
   
   return (
@@ -65,19 +64,12 @@ const LandingPage: React.FC = () => {
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="flex gap-4 justify-center items-center flex-wrap"
+          className="flex gap-4 justify-center items-center"
         >
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="btn-primary text-lg px-8 py-3"
-          >
-            Get Started
-          </motion.button>
-          <motion.div className="flex items-center gap-2 text-text">
-            <span className="text-3xl">👈</span>
-            <span className="text-3xl">👉</span>
-            <span className="text-lg">Swipe to discover</span>
+          <motion.div className="flex items-center gap-4 text-text">
+            <span className="text-4xl">👈</span>
+            <span className="text-lg font-medium">Swipe to discover amazing meals</span>
+            <span className="text-4xl">👉</span>
           </motion.div>
         </motion.div>
       </div>
